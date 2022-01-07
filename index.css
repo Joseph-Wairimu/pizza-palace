@@ -1,0 +1,20 @@
+
+ul{
+   flex-grow: inherit;
+   display: flex;
+    float: right;
+justify-content: space-around;
+}
+li{
+    
+    padding:1rem 1rem;
+    list-style: none;
+}
+.navbar{
+    background-color: darkgrey;
+}
+.logo{
+    padding: 0rem;
+    height: 6rem;
+    border-radius: 15%;
+}

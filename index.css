@@ -1,15 +1,4 @@
 
-ul{
-   flex-grow: inherit;
-   display: flex;
-    float: right;
-justify-content: space-around;
-}
-li{
-    
-    padding:1rem 1rem;
-    list-style: none;
-}
 .navbar{
     background-color: darkgrey;
 }
@@ -17,4 +6,12 @@ li{
     padding: 0rem;
     height: 6rem;
     border-radius: 15%;
+}
+.section-1{
+height: 27rem;
+    background-image: url(assets/pexels-valeria-boltneva-9957551.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+
 }

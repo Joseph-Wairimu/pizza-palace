@@ -1,15 +1,15 @@
 
-.navbar{
+/* .navbar{
     opacity: 0.8;
-}
+} */
 .logo{
     padding: 0rem;
     height: 6rem;
     border-radius: 15%;
 }
 .section-1{
-height: 27rem;
-    background-image: url(assets/pexels-valeria-boltneva-9957551.jpg);
+height: 40rem;
+    background-image: url(assets/istockphoto-1145602814-170667a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center ;
@@ -19,10 +19,28 @@ height: 27rem;
     justify-content: center;
 }
 .home p {
-    margin: 0 1rem  ;
+    margin: 0 0rem  ;
     font-size: 1.2rem;
+    color: antiquewhite;
+}
+.nav-link{
     color: black;
 }
 ul li a{
     font-size: 1.5rem;
+   
+}
+.section-2{
+height: 30rem;
+    
+    text-align: center;
+}.section-3{
+    height: 22.5rem;
+    background-color: black;
+}
+.photo{
+    float: right;
+}
+#image{
+    height: 10rem;
 }

@@ -35,7 +35,7 @@ height: 30rem;
    
     text-align: center;
 }.section-3{
-    height: 22.5rem;
+    height: auto;
     background-color: black;
     flex-wrap: wrap;
     color: antiquewhite;
@@ -52,7 +52,7 @@ height: 30rem;
 }
 .section-4{
     padding:2rem 3rem;
-    height: 33rem;
+    height: auto;
 }
 .section-4 h2{
     padding:0rem 1rem;
@@ -67,13 +67,13 @@ height: 30rem;
 .contact{
     background-color: black;
     opacity: 0.7;
-    height: 20rem;
+    height: auto;
    
     
 }
 .cont{
     justify-content: space-between;
     color: antiquewhite;
-
+   flex-wrap: wrap;
     padding:2rem 3rem;
 }

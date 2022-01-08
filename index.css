@@ -31,10 +31,16 @@ ul li a{
    
 }
 .section-2{
-height: 30rem;
+height: auto;
    
-    text-align: center;
-}.section-3{
+    
+}
+#move{
+    padding:3rem 4rem;
+
+
+}
+.section-3{
     height: auto;
     background-color: black;
     flex-wrap: wrap;
@@ -45,7 +51,9 @@ height: 30rem;
     float: right;
 }
 #image{
-    height: 10rem;
+    height: 23rem;
+    float: right;
+    padding: 3rem;
 }
 .fine{
     padding:4rem 4rem;

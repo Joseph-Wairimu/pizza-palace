@@ -19,7 +19,7 @@ height: 40rem;
     justify-content: center;
 }
 .home p {
-    margin: 0 0rem  ;
+    margin: 0 1rem  ;
     font-size: 1.2rem;
     color: antiquewhite;
 }
@@ -32,15 +32,19 @@ ul li a{
 }
 .section-2{
 height: 30rem;
-    
+   
     text-align: center;
 }.section-3{
     height: 22.5rem;
     background-color: black;
+    flex-wrap: wrap;
 }
 .photo{
     float: right;
 }
 #image{
     height: 10rem;
+}
+.fine{
+    padding:4rem 9rem;
 }

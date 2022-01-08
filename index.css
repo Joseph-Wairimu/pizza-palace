@@ -38,6 +38,8 @@ height: 30rem;
     height: 22.5rem;
     background-color: black;
     flex-wrap: wrap;
+    color: antiquewhite;
+    font-weight: lighter;
 }
 .photo{
     float: right;
@@ -46,5 +48,9 @@ height: 30rem;
     height: 10rem;
 }
 .fine{
-    padding:4rem 9rem;
+    padding:4rem 4rem;
+}
+.section-4{
+
+    height: 40rem;
 }

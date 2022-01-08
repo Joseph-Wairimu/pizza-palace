@@ -68,9 +68,12 @@ height: 30rem;
     background-color: black;
     opacity: 0.7;
     height: 20rem;
+   
+    
+}
+.cont{
     justify-content: space-between;
     color: antiquewhite;
 
     padding:2rem 3rem;
-    
 }

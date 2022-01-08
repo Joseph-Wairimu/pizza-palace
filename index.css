@@ -60,17 +60,32 @@ height: auto;
 }
 .section-4{
     padding:2rem 3rem;
-    height: auto;
+    height: 25rem;
 }
+
 .section-4 h2{
     padding:0rem 1rem;
   
 }
+.form{
+    display: flex;
+}
 .selectt{
     padding:0rem 1rem;
-    height: 25rem;
+    height: 19rem;
     box-shadow: 5px 5px 5px 5px #888888;
     width: 40rem;
+    margin-right: 4rem;
+}
+.cart{
+    padding:0rem 1rem;
+    height: 19rem;
+    box-shadow: 5px 5px 5px 5px #888888;
+    width: 40rem;
+}
+#button{
+    float: right;
+    background-color: orange;
 }
 .contact{
     background-color: black;

@@ -119,9 +119,19 @@
      <div class=" form">       
           <div class="selectt">
 
+            <label for="">Pizza<span class="text-danger">*</span> </label>
+            <select class="form-select form-select-sm w-29 p-1" aria-label=".form-select-sm example">
+              <option value="" selected disabled>--Select Pizza--</option>
+              <option value="1">BBQ Chicken Pizza</option>
+              <option value="2">Hawaiian Pizza</option>
+              <option value="3"> Margherita Pizza</option>
+              <option value="2">Supreme Pizza</option>
+              <option value="3">Buffalo Pizza</option>
+            </select><br>
+
               <label for="">Pizza Size <span class="text-danger">*</span> </label>
               <select class="form-select form-select-sm w-29 p-1" aria-label=".form-select-sm example">
-                <option value="" selected disabled>--Select Pizza--</option>
+                <option value="" selected disabled>--Select Pizza size--</option>
                 <option value="1">small</option>
                 <option value="2">medium</option>
                 <option value="3">large</option>
@@ -141,17 +151,37 @@
                 <option value="1">Pepperoni</option>
                 <option value="2">Black Olives</option>
                 <option value="3">Fresh Garlic</option>
-              </select><br><br><br>
+              </select><br>
               <button id="button">Add to cart</button>
       </div>
       <div class="cart">
-           <div class="d-flex cartt">
-              <h5>size</h5>
-              <h5>Crust</h5>
-              <h5>Topping</h5>
-              <h5>Quantity</h5>
-              <h5>Total</h5>
-           </div>
+        
+           <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pizza-Type</th>
+                <th scope="col">Size</th>
+                <th scope="col">Crust</th>
+                <th scope="col">Topping</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+                <td><input type="number"placeholder="0" min="0" max="99" class="form-control" id="Price"></td>
+                <td></td>
+              </tr>
+            
+            </tbody>
+          </table>
       </div>
      </div>  
 </div>

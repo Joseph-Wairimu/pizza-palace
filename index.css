@@ -83,10 +83,7 @@ height: auto;
     box-shadow: 5px 5px 5px 5px #888888;
     width: 48rem;
 }
-.cartt{
-    justify-content: space-evenly;
-    text-decoration: underline;
-}
+
 #button{
     float: right;
     background-color: orange;

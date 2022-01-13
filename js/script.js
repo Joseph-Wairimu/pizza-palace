@@ -44,6 +44,49 @@ $("#order").on("submit", function (e) {
     let customSize = $("#size option:selected").val();
     let customCrust = $("#crust option:selected").val();
 
-
+    if (customToppings == "pinapple") {
+        customToppings = 200
+    }
+    else if (customToppings == "pepper") {
+        customToppings = 100
+    }
+    else if (customToppings == "mushroom") {
+        customToppings = 250
+    }
+    else if (customToppings == "bacon") {
+        customToppings = 300
+    }
+   
+   if (customSize == "Large") {
+        sizePrice = 1200;
+    }
+    else if (customSize == "Medium") {
+        sizePrice = 800;
+    }
+    else if (customSize == "Small") {
+        sizePrice = 600;
+    } else {
+        sizePrice = 0;
+    }
+    if (customCrust == "Thin") {
+        crustPrice = 100;
+    }
+    else if (customCrust == "Thick") {
+        crustPrice = 200;
+    }
+    else if (customCrust == "DoubleStack") {
+        crustPrice = 200;
+    }
+    else {
+        crustPrice = 0;
+    }
+    totalCost = sizePrice + crustPrice + (customToppings);
+    totalCost = totalCost * quantity;
+    $("#pflavor").html(customFlavor);
+    $("#psize").html(customSize);
+    $("#pcrust").html(customCrust);
+    $("#ptoppings").html(customToppings);
+    $("#pnumber").html(quantity);
+    $("#ptotal-cost").html(totalCost);
 
 });

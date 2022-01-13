@@ -1,4 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&family=Playfair+Display:ital@1&family=Teko:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Teko', sans-serif;
+}
+
 .navbar{
     opacity: 0.8;
 }
@@ -103,4 +116,23 @@ height: auto;
     color: antiquewhite;
    flex-wrap: wrap;
     padding:2rem 3rem;
+}
+
+
+
+/* section styling */
+
+.container h2{
+    font-size: 3rem;
+}
+
+#order select{
+    font-size: 1.5rem;
+}
+
+.can{
+    font-size: 1.3rem;
+    max-width: 400px;
+    text-transform: capitalize;
+    color: rgb(136, 100, 10);
 }

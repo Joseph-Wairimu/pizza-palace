@@ -25,3 +25,9 @@ toppySelectChange = function () {
     document.getElementById("ptoppings").innerHTML = this.topping;
    
 }
+
+quantitySelectChange = function () {
+    this.quantity = $("#number").val();
+    document.getElementById("pnumber").innerHTML = this.quantity;
+    
+}

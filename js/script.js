@@ -31,3 +31,8 @@ quantitySelectChange = function () {
     document.getElementById("pnumber").innerHTML = this.quantity;
     
 }
+totalSelectChange = function () {
+    this.price = $("#ptotal-cost").val();
+    document.getElementById("ptotal-cost").innerHTML = this.price;
+    
+}

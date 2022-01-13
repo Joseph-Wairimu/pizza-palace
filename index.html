@@ -121,25 +121,25 @@
         <div class="div">
       <div class="card" style="width: 30rem;">
       <form id="order">
-        <select class="form-select" id="flavor" onchange="pizzaSelectChange()">
-          <option value="">Select Pizza</option>
+        <select class="form-select" id="flavor" onchange="pizzaSelectChange()" required>
+          <option value="">Select Pizza  <span class="text-danger">*</span></option>
           <option value="Peperoni">Peperoni</option>
           <option value="Cheese">Cheese Pizza</option>
         </select><br>
-        <select class="form-select" id="size" onchange="proportionSelectChange()">
-          <option value="">Select Size</option>
+        <select class="form-select" id="size" onchange="proportionSelectChange()" required>
+          <option value="">Select Size  <span class="text-danger">*</span></option>
           <option value="Large">Large Ksh. 1200</option>
           <option value="Medium">Medium Ksh. 800</option>
           <option value="Small">Small Ksh. 600</option>
         </select><br>
-        <select class="form-select" id="crust" onchange="crustySelectChange()">
-          <option value=""> Select Crust</option>
+        <select class="form-select" id="crust" onchange="crustySelectChange()" required>
+          <option value=""> Select Crust  <span class="text-danger">*</span></option>
           <option value="Thin">Thin Ksh. 100</option>
           <option value="Thick">Thick Ksh. 200</option>
           <option value="DoubleStack">DoubleStack Ksh. 250</option>
         </select><br>
-        <select class="form-select" id="topping" onchange="toppySelectChange()">
-          <option value=""> Add Topping</option>
+        <select class="form-select" id="topping" onchange="toppySelectChange()" required>
+          <option value=""> Add Topping  <span class="text-danger">*</span></option>
           <option value="pepper">pepper Ksh. 100</option>
           <option value="pinapple">pinnapple Ksh. 200</option>
           <option value="mushroom">mushroom Ksh. 250</option>

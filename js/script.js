@@ -5,8 +5,11 @@ function PizzaOrder(size, crust, toppings) {
     this.topping = toppings;
     this.quantity = number;
     this.price = 0;
+    
 };
-pizzaSelectChange = function () {
+
+
+pizzaSelectChange= function() {
     this.flavor = $("#flavor option:selected").val();
     document.getElementById("pflavor").innerHTML = this.flavor;
 }
@@ -20,7 +23,7 @@ crustySelectChange = function () {
     this.crust = $("#crust option:selected").val();
     document.getElementById("pcrust").innerHTML = this.crust;
 }
-toppySelectChange = function () {
+ toppySelectChange = function () {
     this.topping = $("#topping option:selected").val();
     document.getElementById("ptoppings").innerHTML = this.topping;
    
@@ -36,10 +39,15 @@ totalSelectChange = function () {
     document.getElementById("ptotal-cost").innerHTML = this.price;
     
 }
+
 $("#order").on("submit", function (e) {
+ 
+
+
+
     e.preventDefault();
     let customToppings = $("#topping option:selected").val();
-    let customFlavor = $("#flavor option:selected").val();
+    // let customFlavor = $("#flavor option:selected").val();
     let quantity = $("#number").val();
     let customSize = $("#size option:selected").val();
     let customCrust = $("#crust option:selected").val();
@@ -82,11 +90,25 @@ $("#order").on("submit", function (e) {
     }
     totalCost = sizePrice + crustPrice + (customToppings);
     totalCost = totalCost * quantity;
-    $("#pflavor").html(customFlavor);
-    $("#psize").html(customSize);
-    $("#pcrust").html(customCrust);
-    $("#ptoppings").html(customToppings);
-    $("#pnumber").html(quantity);
     $("#ptotal-cost").html(totalCost);
+
+
+});
+
+$("#check-info").on("click", function (e) {
+    e.preventDefault();
+    let person = $("input#name").val();
+    let phone = $("input#phone").val();
+    let location = $("input#location").val();
+    let deliveryAmount = totalCost + 200;
+    if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
+
+        $("#message").append("order for " + person +" " + "Phone number" + " " + phone + ", Your order will be delivered to you at  " + location + "  cost will be .sh:  " + deliveryAmount + ". It is inclusive the delivery fee and your order bill");
+        $("#message").slideDown(1200);
+    }
+    else {
+        alert("Invalid provide your delivery information!");
+    }
+
 
 });

@@ -36,3 +36,14 @@ totalSelectChange = function () {
     document.getElementById("ptotal-cost").innerHTML = this.price;
     
 }
+$("#order").on("submit", function (e) {
+    e.preventDefault();
+    let customToppings = $("#topping option:selected").val();
+    let customFlavor = $("#flavor option:selected").val();
+    let quantity = $("#number").val();
+    let customSize = $("#size option:selected").val();
+    let customCrust = $("#crust option:selected").val();
+
+
+
+});

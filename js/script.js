@@ -95,20 +95,46 @@ $("#order").on("submit", function (e) {
 
 });
 
+
+
+
 $("#check-info").on("click", function (e) {
     e.preventDefault();
     let person = $("input#name").val();
     let phone = $("input#phone").val();
     let location = $("input#location").val();
     let deliveryAmount = totalCost + 200;
+   
+    let delivery="";
+
+if(yes.checked){
+delivery="yes"
+
+}else if (no.checked){
+
+    delivery="no"
+}
+if(delivery=="yes"){
+
+
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#message").append("order for " + person +" " + "Phone number" + " " + phone + ", Your order will be delivered to you at  " + location + "  cost will be .sh:  " + deliveryAmount + ". It is inclusive the delivery fee and your order bill");
+        $("#message").append("order for " + person +" " + "Phone number " + " " + phone + ", Your order will be delivered to you at  " + location + "  cost will be .sh:  " + deliveryAmount + ". It is inclusive the delivery fee and your order bill");
         $("#message").slideDown(1200);
+        return 0;
     }
     else {
         alert("Invalid provide your delivery information!");
     }
 
+
+
+
+} else if( delivery=="no"){
+
+    $("#message").append("Thank you " + person +" " + " Phone number" + " " + phone + "for Shopping with us, your total cost is " + totalCost +" " + "  and your order is ready for pick up");
+    $("#message").slideDown(1200);
+
+}
 
 });

@@ -150,7 +150,7 @@
         <button type="submit" class="btn btn-warning ms-2" style="font-size: 1.3rem; padding: 0 2rem;"><i class="bi bi-cart4"></i></button>
       </form>
       </div><br><br>
-      <h5>Do you want your order delivered?</h5>
+      <h5>Do you want your order delivered at sh.200 ?</h5>
       <input type="radio"name="delivery" id="yes" value="yes">YES <br>
       <input type="radio" name="delivery" id="no" value="no">NO
       </div>
@@ -189,11 +189,11 @@
       
     <div class="come ms-5">
       <div class="card" style="width: 30rem;">
-        <h4>Delivery cost at sh. 200</h4>
+        <h4>Customer details</h4>
         <form class="deliver-form" id="del-info">
           <div class="form-group">
             <input type="text" id="name" class="form-control mb-3" placeholder="Full Name">
-            <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+            <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number" min="12" max="12">
             <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
           </div>
         </form>

@@ -96,7 +96,14 @@ $("#order").on("submit", function (e) {
 });
 
 
-
+$(document).ready(function(){
+    $("#no").click(function(){
+      $("#location").hide();
+    });
+    $("#yes").click(function(){
+      $("#location").show();
+    });
+  });
 
 $("#check-info").on("click", function (e) {
     e.preventDefault();
@@ -132,7 +139,7 @@ if(delivery=="yes"){
 
 } else if( delivery=="no"){
 
-    $("#message").append("Thank you " + person +" " + " Phone number" + " " + phone + "for Shopping with us, your total cost is " + totalCost +" " + "  and your order is ready for pick up");
+    $("#message").append("Thank you " + person +" " + " Phone number" + " " + phone + " for Shopping with us, your total cost is " + totalCost +" " + "  and your order is ready for pick up");
     $("#message").slideDown(1200);
 
 }
